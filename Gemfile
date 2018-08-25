@@ -41,6 +41,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'devise'
   gem 'nokogiri'
+  gem 'mysql2'
 end
 
 group :development do
