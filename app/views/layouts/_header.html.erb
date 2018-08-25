@@ -1,0 +1,6 @@
+<%= link_to '新規登録',new_user_registration_path %>
+<%= link_to 'ログイン',new_user_session_path %>
+<% if signed_in? %>
+<%= link_to 'tinderdaysとは',about_path %>
+<%= link_to 'User詳細ページ',user_path %>
+<% end %>
