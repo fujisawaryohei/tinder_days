@@ -1,1 +1,15 @@
-<h2>HOME</h2>
+<div class="meet_btn">
+  <p><%= link_to '出会う。',root_path%></p>
+</div>
+
+
+<div class="matching-home">
+    <div class="user_matching_icon">
+  <%= image_tag(@user.user_image)%>
+  </div>
+  <div class="self_introduce">
+    <p class="self_name">名前:<%= @user.name %></p>
+    <p class="member">推しメン:<%= @user.favorite%></p>
+    <p class="group"> グループ:<%= @user.group%></p>
+  </div>
+</div>

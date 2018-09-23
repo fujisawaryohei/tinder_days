@@ -1,0 +1,16 @@
+  <div class="quiz_fujisawa">
+    <div class="question_fujisawa">
+     <h1>問題</h1>
+    </div>
+    <p class="question_content_fujisawa">
+      <%= @post.question %>
+    </p>
+    <%= form_for("/posts/:id/success") do %>
+    <div class="choices_fujisawa">
+    <input class="first fujisawa" name="user_answer" type="button" value="<%=@post.select1%>"><br>
+    <input class="second fujisawa" name="user_answer" type="button" value="<%=@post.select2%>"><br>
+    <input class="third fujisawa" name="user_answer" type="button" value="<%=@post.select3%>"><br>
+    <input class="fourth fujisawa" name="user_answer" type="button" value="<%= @post.select4%>">
+    <% end %>
+    </div>
+  </div>

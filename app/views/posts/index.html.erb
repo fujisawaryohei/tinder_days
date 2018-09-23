@@ -1,0 +1,14 @@
+<body>
+    <div class="user_index">
+      <% @posts.each do |post| %>
+      <div class="index_parent">
+       <img src="https://i.pinimg.com/564x/a9/bd/3f/a9bd3faf83e4d2d7eb9eec5c979cf9e0.jpg">
+        <p class="question">
+          <%=link_to post_path(post.id) do %>
+         問題：<%= post.question %>
+          <% end %>
+        </p>
+     </div>
+    <% end %>
+  </div>
+</body>

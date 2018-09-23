@@ -1,0 +1,19 @@
+// Place all the styles related to the about controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.mainimage {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main h1 {
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+.main span {
+    font-size: 50px;
+}

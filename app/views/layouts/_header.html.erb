@@ -1,6 +1,24 @@
-<%= link_to '新規登録',new_user_registration_path %>
-<%= link_to 'ログイン',new_user_session_path %>
-<% if signed_in? %>
-<%= link_to 'tinderdaysとは',about_path %>
-<%= link_to 'User詳細ページ',user_path %>
+<% if user_signed_in? %>
+<li><%= link_to('/', {:class=>'header-logo'}) do%>
+ <img src="https://pbs.twimg.com/media/DldAqsPU8AMTjhe.jpg">
+</li>
+<% end %>
+<div class="header-menus">
+  <ul>
+   <li><%= link_to 'ログアウト',destroy_user_session_path,method: :delete%></li>
+   <li>
+     <%= link_to('ユーザーページ',user_path(current_user.id))%>
+   </li>
+   <li><%= link_to '投稿一覧','/posts',{:class=>'post_index'}%></li>
+   <li><%= link_to '投稿',new_post_path,{:class=>'post'}%></li>
+   <li><%= link_to 'tinderdaysとは',about_path,{:class=>'about'} %></li>
+ </ul>
+ </div>
+<% else %>
+<div class="header-menus">
+ <ul>
+   <li><%= link_to '新規登録',new_user_registration_path,{:class =>'sign_in' }%></li>
+   <li><%= link_to 'ログイン',new_user_session_path,{:class=>'log_in'}%></li>
+ </ul>
+</div>
 <% end %>

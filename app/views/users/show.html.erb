@@ -1,0 +1,14 @@
+<body>
+  <div class="user">
+  <div class="user_self_intr">
+    <div class="user_image_icon">
+      <img src="<%= current_user.user_image %>">
+    </div>
+    <div class="user_intr_content">
+     <p>ユーザー名：<%= current_user.name%></p>
+     <p>推しグループ：<%= current_user.group%></p>
+     <p>推しメン：<%= current_user.favorite%></p>
+   </div>
+  </div>
+ </div>
+</body>

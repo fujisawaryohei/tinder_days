@@ -1,0 +1,23 @@
+<body>
+<div class="true">
+  <p id="true">
+  正解！！
+  </p>
+  <% link_to (posts_path) do %>
+  <div type="button" class="back">
+    ホームに戻る
+  </div>
+ <% end %>
+</div>
+</body>
+
+<script>
+  $(function() {
+    $('.back').hide().fadeIn(1000);
+});
+
+
+$(function() {
+    $('#true').hide().fadeIn(3000);
+});
+</script>

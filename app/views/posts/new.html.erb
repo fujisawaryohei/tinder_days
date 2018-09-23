@@ -1,0 +1,18 @@
+<body>
+  <div class="quiz">
+    <div class="quiz-form">
+    <p>問題</p>
+    <%= form_tag("/posts",method: :"post") do %>
+    <textarea class="question" name="question"></textarea>
+         <input class="ans1" name="select1" placeholder="解答１">
+         <input class="ans2" name="select2" placeholder="解答２">
+         <input class="ans3" name="select3" placeholder="解答３">
+         <input class="ans4" name="select4" placeholder="解答４">
+         <input class="answer" name="answer" type="number" placeholder="answer">
+         <div class="send">
+           <input class="create" type="submit" value="作成">
+         </div>
+       </div>
+    <% end %>
+  </div>
+</body>
